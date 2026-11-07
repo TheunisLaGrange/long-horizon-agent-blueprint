@@ -1,0 +1,14 @@
+# Python bytecode and virtual environments
+__pycache__/
+*.pyc
+.venv/
+env/
+venv/
+
+# Local configuration overrides or developer secrets
+.env
+config/*_secret.yaml
+
+# Runtime generated agent output data and metrics
+outputs/
+*.log

@@ -1,0 +1,17 @@
+agent:
+  name: "compliance_compliance_agent"
+  version: "1.0.0"
+  max_trajectory_steps: 20       # Kill-switch to prevent infinite loops and runaway bills
+
+llm:
+  planner_model: "gpt-4o"        # High-reasoning model for structural planning
+  worker_model: "gpt-4o-mini"    # Faster, cheaper model for execution steps
+  temperature: 0.0               # Lock temperature to 0 for maximum structural consistency
+
+throttling:
+  self_scheduling_delay: 2       # Base cooldown seconds between steps to prevent rate limits
+  max_retries_per_step: 3        # Number of recovery attempts before failing a trajectory
+
+diagnostics:
+  log_level: "DEBUG"             # DEBUG, INFO, WARNING, ERROR
+  enable_post_mortem: true       # Toggle the visual analyzer trace on run completion
