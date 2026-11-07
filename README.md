@@ -5,7 +5,7 @@ A durable, state-driven autonomous agent framework designed to maintain state co
 ## Project Directory Structure
 
 ```text
-my_agent_project/
+long-horizon-agent-blueprint/
 │
 ├── .gitignore               # Excludes python cache, environments, and secrets
 ├── .git/                    # Git tracking history binary workspace
